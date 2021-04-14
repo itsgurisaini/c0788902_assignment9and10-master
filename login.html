@@ -1,0 +1,55 @@
+<!--Name :- Gurwinder singh
+    StudentId :- c0788902-->
+<html>
+<head>
+    <title>login</title>
+    <style>
+        body{background-color: aquamarine;}
+        table{border: 5px solid black;
+        padding-top: 100px;
+            padding-bottom: 100px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin: auto;}
+        h1{padding-left: 700px;
+        }
+        h2{padding-left: 650px;}
+        h1{padding-top:100px;}
+    </style>
+    <script>
+    function validate(){
+        
+        if(document.getElementById("email").value ==""){document.getElementById("err_email").innerHTML="This Field Is Required"}
+        if(document.getElementById("pass").value ==""){document.getElementById("err_pass").innerHTML="This Field Is Required"}
+        
+         if(document.getElementById("email").value=="admin@lcit.com"){ letsGo = true; if(document.getElementById("pass").value=="lcit123")
+        {
+            letsGo = true;
+            document.getElementById("submit").href="home.html"}} 
+        
+    }
+    </script>
+    </head>
+    <body>
+    <table style="background-color: cornsilk">
+        <h1>HELLO!</h1>
+        <h2>Login To Your Account!</h2>
+        <tr>
+        <td>EMAIL:</td>
+            <td><input type="email" id="email"><span id="err_email"></span></td>
+        </tr>
+        <br>
+        <tr>
+        <td>PASSWORD:</td>
+        <td><input type="password" id="pass"><span id="err_pass"></span></td></tr><br>
+        
+        <tr>
+                <td><br><br><br><br></td>
+                <td><a class="button" id="submit" href="#" onclick="validate()" style="border: 2px solid black; padding: 10px;text-decoration: none;font-size: 20px;background-color: whitesmoke">login</a></td>
+            </tr>
+        
+       
+        </table>    
+     
+    </body>
+</html>
